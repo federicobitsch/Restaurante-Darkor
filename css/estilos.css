@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    background: url(/RestauranteDarkor/imagenes/Burguer\ one.jpg);/* fixed; SE QUEDA FIJO LA IMAGEN*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+.container{
+    display: flex;
+    margin: auto;
+    background-color: rgba(20, 18, 18, 0.658);
+    padding: 20px;
+}
+
+/* lOGO HACER MAS ADELANTE . CON EL NAV
+.left-nav{
+    filter: brightness(1); ELIMINAR FONDO
+    mix-blend-mode: multiply;
+   
+.left-nav img{
+    height: 100px;
+
+}
+*/
+
+
+/*TITULO .*/
+.container h2{
+    margin: auto;
+    color: white;
+    font-family: Elsie;
+    font-size: 32px;
+    margin-bottom: -10px;
+    margin-right: 28%;
+}
+
+.menu {
+    display: flex;
+    align-items: end;
+} 
+
+.menu ul li a {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+
+}
+nav ul {
+    display: flex;
+    padding: 14px;
+    gap: 20px;  
+    list-style: none;
+    margin-bottom: -17px;
+}
+
+.menu ul li :hover{
+    text-decoration:underline;
+    color:white;
+}
+
+ /*TAREA TENGO QUE HACER EL TITULO CON EL BOTTON EN EL MEDIO 
+    COLOR EN LOS BORDES
+    border-top-color: #664e4e;
+    border-right-color: blue;
+    border-bottom-color: #00FF00;
+    border-left-color: #CCC;*/
+
+
+.container-main{
+    display:block;
+    font-size: 28px; /* Define el tamaño del texto */
+    justify-content:center;
+    text-align: center;
+    margin: 12%; 
+    
+   
+}
+.container-main h2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-right: 4rem;
+}
+.container-main p{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    color: white;
+    margin-left: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 6%;
+   
+}
+
+/*BUTTON DE VER MENU
+.ver-menu {
+    position: relative;
+    animation: move 10s infinite linear;
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+  
+.ver-menu:hover {
+    background-color: red;
+    transition: background-color 0.5s;
+}
+  
+.ver-menu:active {
+    background-color: green;
+    transition: background-color 0.2s;
+  }
+  
+@keyframes move {
+    0% { left: 0; }
+    50% { left: 200px; }
+    100% { left: 0; }
+  }
+*/
+
+
+
+/*Direcciona a la otra pagina del menu.*/
+.container-main a{
+    color: black;
+    text-decoration: none;
+}
+
+.ver-menu{
+    border-radius: 12px;
+    padding: 12px 22px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    background-color: #cccccc;
+    animation: cambio-color 4s infinite;
+    margin-right: 6%;
+   
+  }
+  
+  @keyframes cambio-color {
+    0% {
+      background-color: #6b474f;
+    }
+    25% {
+      background-color: #36a2eb;
+    }
+    50% {
+      background-color: #ffce56;
+    }
+    75% {
+      background-color: #4bc0c0;
+    }
+    100% {
+      background-color: #ff6384;
+    }
+  }
+  

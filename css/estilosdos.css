@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    background-color: white;
+}
+
+.container{
+    display: flex;
+    margin: auto;
+    background-color: rgba(20, 18, 18, 0.658);
+    padding: 20px;
+}
+
+/*TITULO .*/
+.container h2{
+    margin: auto;
+    color: white;
+    font-family: Elsie;
+    font-size: 32px;
+    margin-bottom: -10px;
+    margin-right: 28%;
+}
+
+.menu {
+    display: flex;
+    align-items: end;
+} 
+
+.menu ul li a {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+
+}
+nav ul {
+ display: flex;
+ padding: 14px;
+ gap: 20px;  
+ list-style: none;
+ margin-bottom: -17px;
+
+}
+
+.menu ul li :hover{
+  text-decoration:underline;
+  color:white;
+  
+}
+
+.nosotros{
+   display: flex;
+   padding: 5%;
+   align-items: start;
+}
+/*NOSOTROS */
+.nosotros h2{
+  position: absolute;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.parrafo{
+  padding: auto;
+  text-align:justify;
+  margin-left:30%;
+  font-size: 20px;
+}  
+
+/*CAROSEL IMAGEN*/
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-container {
+  display: flex;
+  width: 300%; /* 3 imágenes, cada una con un ancho del 100% */
+}
+
+.carousel img {
+  width: 18%; /* Ancho de cada imagen */
+  height: auto;
+}
+
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+
+/*MENU DE COMIDAS . */
+.menu-text{
+  display: inline-block;
+  text-align: center;
+  padding: 6rem;
+  margin: auto; 
+  width: 100%;
+  height: auto;
+}
+
+.menu-text h2{
+  font-size: 32px;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.menu-text p{
+  color: black;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  display: flex;
+  padding: auto;
+  margin: 22px;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 4em; 
+  height: 2em;
+  font-size: 22px;
+}
+
+.Picadas{ 
+  width: 16em;
+  border-radius: 10px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+
+}
+
+.Picadas:hover{
+  background-color: #4CAF50; /* Green */
+  color: white;
+  cursor: pointer;
+}
+
+/* -.IMAGENES DEL MENU.- */
+.container-menu-img {
+  display: flex;
+  padding: 1em;
+}
+
+
+.container-menu-img .item {
+  flex-basis: 25%;
+  box-sizing: border-box; 
+  padding: 20px;
+  
+}
+
+.container-menu-img img {
+  width: 80%;
+  height: auto;
+}
+
+.container-menu-img p {
+  margin-top: 10px;
+}
+
+
+/*-.EVENTOS.-*/
+.containerr{
+  padding: 10em;
+}
+
+.row {
+  display: flex;
+}
+
+.cell img {
+  padding: 12px;
+  width: 88%;
+  height: auto;
+  transition: transform 0.5s; /* Para animar el efecto hover */
+}
+.text-events {
+  margin: 1em; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+  padding: 16px;
+}
+
+.cell:hover img {
+  transform: scale(1.1); /* Ajusta el valor según el efecto que desees */
+  opacity: .9;
+  cursor:pointer;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 25px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1600px;
+ 
+  margin: 0 auto;
+}
+
+.footer-info, .footer-social {
+  flex: 1;
+}
+
+/* /
+.footer-info h3, .footer-social h3 {
+  border-bottom: 1px solid #af0000;
+} UNA RAYA NEGRA 
+*/
+.footer-info p {
+  margin: 10px 0;
+}
+
+.footer-social img {
+  width: 30px; /* Ajusta el tamaño según tus preferencias */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  margin-right: 10px; /* Espaciado entre las imágenes */  
+  margin-top: 2px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Alinea el contenido en la parte inferior */
+  min-height: 50px; /* Ajusta según tus necesidades, pero debe ser un valor positivo */
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 16px;
+}
+
+
+
+/*BOTTON DE WHASAPP FIXED .*/
+.container-boton{
+  border: 1px solid #ffffff;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px;
+  transition: ease 0.3s;
+  animation: efecto 1.6s infinite;
+}
+
+.container-boton:hover{
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.boton{
+  width: 40px;
+  transition: ease 1s;
+}
+
+@keyframes efecto{
+  0%{
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+  }
+  100%{
+      box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
