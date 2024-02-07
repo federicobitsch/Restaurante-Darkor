@@ -1,7 +1,7 @@
 # Restaurante Darkor - Página Web
 
 ![Vista previa de la página](enlace_a_la_imagen.png)
-(En manteminimento)
+(En mantenimiento)
 
 ## Descripción del Proyecto
 Bienvenido al repositorio del sitio web del Restaurante Darkor. Este proyecto es una página web simple creada utilizando HTML y CSS para representar la información y el menú del restaurante.
