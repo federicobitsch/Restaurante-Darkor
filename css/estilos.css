@@ -80,7 +80,6 @@ nav ul {
     justify-content:center;
     text-align: center;
     margin: 12%; 
-    
    
 }
 .container-main h2{
@@ -89,6 +88,7 @@ nav ul {
     justify-content: center;
     margin-right: 4rem;
 }
+
 .container-main p{
     display: flex;
     padding: 10px;
@@ -97,7 +97,7 @@ nav ul {
     margin-left: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-right: 6%;
-   
+
 }
 
 /*BUTTON DE VER MENU
@@ -136,6 +136,7 @@ nav ul {
 .container-main a{
     color: black;
     text-decoration: none;
+    
 }
 
 .ver-menu{
@@ -148,9 +149,9 @@ nav ul {
     animation: cambio-color 4s infinite;
     margin-right: 6%;
    
-  }
+}
   
-  @keyframes cambio-color {
+@keyframes cambio-color {
     0% {
       background-color: #6b474f;
     }

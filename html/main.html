@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-   
-    <meta charset="UTF-8" />
+    <!---------META-------->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---------CSS-------->
     <link rel="stylesheet" href="/RestauranteDarkor/css/estilosdos.css" />
     <link rel="stylesheet" href="/RestauranteDarkor/html/index.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Restaurante Darkor</title>
   </head>
-  <body>
-    <div class="container">
-      <h2>Restaurante Darkor</h2>
-      <nav class="menu">
-        <ul>
-          <li>
-            <a href="/RestauranteDarkor/html/index.html">Inicio</a></li>
-          <li><a href="#" target="_blank">Menu</a></li>
-          <li><a href="#" target="_blank">Eventos</a></li>
-          <li><a href="#" target="_blank">Contacto</a></li>
+<body>
+  <div class="container">
+    <h2>Restaurante Darkor</h2>
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="#inicio">Inicio</a></li>
+          <li><a href="#menu" >Menu</a></li>
+          <li><a href="#eventos">Eventos</a></li>
+          <li><a href="#" >Contacto</a></li>
         </ul>
       </nav>
     </div>
-    <div class="nosotros">
+    <div id="nosotros" class="nosotros">
       <h2>¿Quienes Somos?</h2>
       <aside class="parrafo">
         <p>
@@ -31,16 +31,19 @@
         </p>
       </aside>
     </div>
-    <div class="carousel">
+    <div id="carousel" class="carousel">
       <div class="carousel-container">
         <img src="/RestauranteDarkor/imagenes/Burguer one.jpg" alt="" />
         <img src="/RestauranteDarkor/imagenes/Sobre-nosotros.jpg" alt="" />
         <img src="/RestauranteDarkor/imagenes/burguer two.png" alt="" />
+        <img src="/RestauranteDarkor/imagenes/Burguer one.jpg" alt="" />
+        <img src="/RestauranteDarkor/imagenes/Burguer one.jpg" alt="" />
       </div>
-      <a class="carousel-prev" href="#">&lsaquo;</a>
-      <a class="carousel-next" href="#">&rsaquo;</a>
+      <a href="#" class="carousel-prev" onclick="prevSlide(event)">‹</a>
+      <a href="#" class="carousel-next" onclick="nextSlide(event)">›</a>
     </div>
-    <div class="menu-text">
+
+    <div id="menu" class="menu-text">
       <h2>Menu Principales</h2>
       <p>
         Nuestro menú está cuidadosamente diseñado para llevar a tu paladar los sabores más auténticos de Argentina.
@@ -55,29 +58,57 @@
       </div>
     </div>
     
-   <div class="container-menu-img">
-  <div class="item">
-    <img src="/RestauranteDarkor/imagenes/Menu-photo.png" alt="">
-    <p>Descripción del plato de comida 1</p>
+  <div id="menu-img" class="container-menu-img">
+    <div class="item">
+      <img src="/RestauranteDarkor/imagenes/Menu-photo.png" alt="">
+      <p>Descripción del plato de comida 1</p>
+      <p class="precio">$10.99</p>
+    </div>
+    <div class="item">
+      <img src="/RestauranteDarkor/imagenes/Menu-photo2.png" alt="">
+      <p> Descripción del plato de comida 2 </p>
+      <p class="precio">$10.99</p>
+    </div>
+    <div class="item">
+      <img src="/RestauranteDarkor/imagenes/Menu-photo2.png" alt="">
+      <p> Descripción del plato de comida 2 </p>
+      <p class="precio">$10.99</p>
+    </div>
+    <div class="item">
+      <img src="/RestauranteDarkor/imagenes/Menu-photo2.png" alt="">
+      <p> Descripción del plato de comida 2 </p>
+      <p class="precio">$10.99</p>
+    </div>
+
+    <div class="item">
+      <img src="/RestauranteDarkor/imagenes/Menu-photo3.png" alt="">
+      <p>Descripción del plato de comida 3</p>
+      <p class="precio">$10.99</p>
+    </div>
+    <div class="item">
+      <img src="/RestauranteDarkor/imagenes/Menu-photo6.png" alt="">
+      <p>Descripción del plato de comida 4</p>
+      <p class="precio">$10.99</p>
+    </div>
+    <div class="item">
+      <img src="/RestauranteDarkor/imagenes/Menu-photo6.png" alt="">
+      <p>Descripción del plato de comida 4</p>
+      <p class="precio">$10.99</p>
+    </div>
+    <div class="item">
+      <img src="/RestauranteDarkor/imagenes/Menu-photo6.png" alt="">
+      <p>Descripción del plato de comida 4</p>
+      <p class="precio">$10.99</p>
+    </div>
   </div>
 
-  <div class="item">
-    <img src="/RestauranteDarkor/imagenes/Menu-photo2.png" alt="">
-    <p> Descripción del plato de comida 2 </p>
-  </div>
-  <div class="item">
-    <img src="/RestauranteDarkor/imagenes/Menu-photo3.png" alt="">
-    <p>Descripción del plato de comida 3</p>
-  </div>
-  <div class="item">
-    <img src="/RestauranteDarkor/imagenes/Menu-photo6.png" alt="">
-    <p>Descripción del plato de comida 4</p>
-  </div>
-</div>
 
-
-    <div class="containerr">
+    <div id="eventos" class="containerr">
         <h2 class="text-events">EVENTOS</h2>
+        <div class="eventos-info">
+          <h2>Organiza tu eventos , Fiestas y mucho mas</h2>
+          <button class="reserva-ya">Reserva</button>
+        </div>
         <div class="row">
           <div class="cell">
             <img src="/RestauranteDarkor/imagenes/Event-photo-3.png" alt="" >
@@ -95,6 +126,12 @@
         </div>
       </div>
     </div>
+
+    <div id="reservaciones" class="reservaciones-main">
+      <h2>Reservaciones</h2>
+    </div>
+
+    
     <footer>
       <div class="footer-container">
           <div class="footer-info">
@@ -111,19 +148,20 @@
               <a href="#" target="_blank"><img src="/RestauranteDarkor/imagenes/instagram.png" alt="Instagram"></a>
               <a href="#" target="_blank"><img src="/RestauranteDarkor/imagenes/gmail.png" alt="Instagram"></a>
           </div>
-          
       </div>
       <div class="footer-bottom">
           <p>&copy; 2024 Restaurante Darkor. Todos los derechos reservados.</p>
       </div>
+
+
   </footer>
-    
-  
      <!--WHASAPP ICONO -->
      <div class="container-boton">
       <a href="https://api.whatsapp.com/send/?phone=2964559240" target="_blank">
           <img class="boton" src="/RestauranteDarkor/imagenes/icono.png" alt="Icono Whasap">
-  
       </a>
+
+          <!---------JAVASCRIPT-------->
+    <script src="/RestauranteDarkor/javascript/script.js"></script>
   </body>
 </html>
