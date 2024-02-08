@@ -4,7 +4,7 @@
 (En mantenimiento)
 
 ## Descripción del Proyecto
-Bienvenido al repositorio del sitio web del Restaurante Darkor. Este proyecto es una página web simple creada utilizando HTML y CSS para representar la información y el menú del restaurante.
+Bienvenido al repositorio del sitio web del Restaurante Darkor. Este proyecto es una página web simple creada utilizando HTML,CSS Y JAVASCRIPT para representar la información y el menú del restaurante.
 
 ## Características Principales
 - **Diseño Responsivo:** La página está diseñada para ser visualizada de manera óptima en diferentes dispositivos, como computadoras de escritorio, tabletas y teléfonos móviles.
@@ -16,6 +16,8 @@ Bienvenido al repositorio del sitio web del Restaurante Darkor. Este proyecto es
 ## Tecnologías Utilizadas
 - HTML5
 - CSS3
+- JAVASCRIPT
+- FIGMA
 
 ## Instrucciones de Uso
 1. Clona el repositorio: `git clone https://github.com/tu_usuario/restaurante-darkor.git`
