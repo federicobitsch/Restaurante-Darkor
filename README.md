@@ -1,6 +1,6 @@
 # Restaurante Darkor - Página Web
 
-![Vista previa de la página](enlace_a_la_imagen.png)
+![Vista previa de la página](https://github.com/federicobitsch/Restaurante-Darkor/blob/master/screenshot-restaurante.png)
 (En mantenimiento)
 
 ## Descripción del Proyecto
