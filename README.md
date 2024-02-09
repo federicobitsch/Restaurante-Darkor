@@ -1,6 +1,6 @@
 # Restaurante Darkor - Página Web
 
-![Vista previa de la página](enlace_a_la_imagen.png)
+![Vista previa de la página](https://github.com/federicobitsch/Restaurante-Darkor/blob/master/screenshot-restaurante.png)
 (En mantenimiento)
 
 ## Descripción del Proyecto
@@ -20,7 +20,7 @@ Bienvenido al repositorio del sitio web del Restaurante Darkor. Este proyecto es
 - FIGMA
 
 ## Instrucciones de Uso
-1. Clona el repositorio: `git clone https://github.com/tu_usuario/restaurante-darkor.git`
+1. Clona el repositorio: `git clone https://github.com/federicobitsch/restaurante-darkor.git`
 2. Abre el archivo `index.html` en tu navegador favorito.
 
 
