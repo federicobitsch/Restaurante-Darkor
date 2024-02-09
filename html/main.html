@@ -26,15 +26,20 @@
     </div>
     <!---------SOBRE NOSOTROS------->
     <div id="nosotros" class="nosotros">
-      <h2>¿Quienes Somos?</h2>
-      <aside class="parrafo">
-        <p>
-          Bienvenidos a nuestro restaurante argentino, el lugar perfecto para disfrutar del auténtico sabor de Argentina en cada bocado. Nos enorgullece ofrecer una experiencia única y de alta calidad que refleja la rica tradición gastronómica de este hermoso país.
-          En nuestro restaurante, nos esforzamos por brindar un ambiente acogedor y familiar donde nuestros comensales se sientan como en casa. <br> <br>¡Te esperamos con los brazos abiertos!
-        </p>
-      </aside>
+      <div class="nosotros-content">
+        <h2>¿Quiénes Somos?</h2>
+        <div class="parrafo">
+          <p>
+            Bienvenidos a nuestro restaurante argentino, el lugar perfecto para disfrutar del sabor. Nos enorgullece ofrecer una experiencia única e inolvidable y de alta calidad que refleja la rica tradición gastronómica de este hermoso país.
+            En nuestro restaurante, nos esforzamos por brindar un ambiente bonito y donde nuestros comensales se sientan como en casa .<br>
+            ¡Te esperamos con los brazos abiertos!
+          </p>
+          <a href="#reservaciones" class="btn-reserva">Reserva ya</a>
+        </div>
+      </div>
     </div>
 
+  
       <!---------CARROSEL-------->
     <div id="carousel" class="carousel">
       <div class="carousel-container">
@@ -134,16 +139,40 @@
       </div>
     </div>
 
-      <!---------RESERVACIONES-------->
-    <div id="reservaciones" class="reservaciones-main">
-      <h2>Reservaciones</h2>
-    </div>
+      
+    <!---------RESERVACIONES-------->
+<div id="reservaciones" class="reservaciones-main">
+  <h2>Reservaciones</h2>
+  <form id="formulario-reserva">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono" required>
+
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+
+    <label for="fecha">Fecha de reserva: </label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <button type="submit" onclick="enviarReserva()">Enviar</button>
+  </form>
+  
+   <!-- Contenedor para mostrar datos -->
+   <div id="datos-reserva"></div>
+</div>
+
 
 
       <!---------FOOTER-------->
     <footer>
       <div class="footer-container">
           <div class="footer-info">
+            <h3 class="footer-text-main">Restaurante Darkor</h3>
               <h3>Contacto</h3>
               <p>Dirección: Darkor 2024 </p>
               <p>Teléfono: 296499532</p>

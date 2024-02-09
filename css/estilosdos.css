@@ -4,15 +4,20 @@
   box-sizing: border-box;
 }
 body{
+  color: black;
+	font-family: 'Roboto', sans-serif;
+	line-height:1.80857;
   font-family: Arial;
-  background-color: white;
+  background-color :#FFF6E9;
 }
 
 .container{
   display: flex;
   margin: auto;
-  background-color: rgba(20, 18, 18, 0.658);
+  background-color: #052333;
+  
   padding: 20px;
+
 }
 
 /*------------------------------------------------------------------
@@ -53,29 +58,65 @@ nav ul {
   color:white;
   
 }
+
+
 /*------------------------------------------------------------------
     NOSOTROS
 -------------------------------------------------------------------*/
-
-.nosotros{
-   display: flex;
-   padding: 5%;
-   align-items: start;
-   background-color: rgb(231, 220, 220);
+.nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('/RestauranteDarkor/imagenes/banner.jpg') center/cover; /* Añade una imagen de fondo y establece el tamaño a auto */
+  color: #fff; /* Cambia el color del texto a blanco para mayor contraste */
+  padding: 100px 0; /* Ajusta el espacio interior */
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+  
+/* Estilos adicionales para mejorar el diseño de la sección Nosotros */
+.nosotros-content {
+  margin: 9%;
+  max-width: 800px;
+   /* Posición relativa para alinear el botón */
 }
 
-.nosotros h2{
-  position: absolute;
-  font-size: 34px;
-  font-weight: 700;
+.parrafo {
+  color: white;
+  font-weight: 500;
+  text-align: justify;
+  font-size: 22px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.parrafo{
-  padding: auto;
-  text-align:justify;
-  margin-left:30%;
-  font-size: 20px;
-}  
+/* Estilos para el botón de reserva */
+.btn-reserva {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #ff4500; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-top: 20px; /* Espacio superior al párrafo */
+}
+
+.btn-reserva:hover {
+  background-color: #e53935; /* Cambia el color de fondo al pasar el mouse */
+}
+
+
+/* Agrega estilos para el título "Reservaciones" */
+#reservaciones {
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Agrega estilos básicos para la sección de reservaciones */
+.reservaciones-main {
+  background-color: #f5f5f5; /* Fondo gris claro */
+}
+
 
 /*------------------------------------------------------------------
     CARROSEL IMAGENES
@@ -88,11 +129,13 @@ nav ul {
 }
 .carousel-container {
   display: flex;
-  width: 300%; /* 3 imágenes, cada una con un ancho del 100% */
-  transition: transform 0.5s ease-in-out;
+  width: 250%; /* 3 imágenes, cada una con un ancho del 100% */
+  transition: transform 0.6s ease-in-out; 
+  gap: 6px;
 }
 
 .carousel img {
+ 
   width: 18%; /* Ancho de cada imagen */
   height: auto;
 }
@@ -160,9 +203,11 @@ nav ul {
   gap: 4em; 
   height: 2em;
   font-size: 22px;
+
 }
 
 .Picadas{ 
+
   width: 16em;
   border-radius: 10px;
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -180,7 +225,6 @@ nav ul {
     IMAGENES DEL MENU PRINCIPAL
 -------------------------------------------------------------------*/
 
-
 .container-menu-img {
   display: flex;
   flex-wrap: wrap;
@@ -192,7 +236,7 @@ nav ul {
   box-sizing: border-box;
   padding: 20px;
   margin: 10px;
-  background-color: #f5f5f5;
+  background-color: #FFF1E1;
   text-align: center;
 }
 
@@ -207,7 +251,7 @@ nav ul {
 
 .container-menu-img .precio {
   font-weight: bold;
-  color: #e44d26; /* color de precio */
+  color: #000000; /* color de precio */
 }
 /*------------------------------------------------------------------
     EVENTOS
@@ -244,6 +288,12 @@ nav ul {
   font-size: 16px;
   border: none;
   cursor: pointer;
+  border-radius: 12px;
+
+}
+
+.reserva-ya:hover{
+  background-color: #a5452d;
 }
 
 .row {
@@ -269,68 +319,73 @@ nav ul {
   align-items: center;
 }
 
-/*RESERVATION hacer*/
-
-
-
-
-
-
-
 
 /*------------------------------------------------------------------
-    FOOTER
+    RESERVACION
 -------------------------------------------------------------------*/
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 25px 0;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1600px;
- 
-  margin: 0 auto;
-}
-
-.footer-info, .footer-social {
-  flex: 1;
-}
-
-/* /
-.footer-info h3, .footer-social h3 {
-  border-bottom: 1px solid #af0000;
-} UNA RAYA NEGRA 
-*/
-.footer-info p {
-  margin: 10px 0;
-}
-
-.footer-social img {
-  width: 30px; /* Ajusta el tamaño según tus preferencias */
-  height: auto; /* Mantiene la proporción original de la imagen */
-  margin-right: 10px; /* Espaciado entre las imágenes */  
-  margin-top: 2px;
-}
-
-.footer-bottom {
+.reservaciones-main {
+  background-color: #f5f5f5; /* Fondo gris claro */
   text-align: center;
-  padding: 15px;
-  background-color: #1b1b1b;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; /* Alinea el contenido en la parte inferior */
-  min-height: 50px; /* Ajusta según tus necesidades, pero debe ser un valor positivo */
+  padding: 30px; /* Aumenta el espacio interior */
+  border-radius: 20px; /* Bordes redondeados */
+  border: 2px solid #c5b5b5; /* Borde con color gris claro */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  max-width: 500px; /* responsive */
+  margin: 0 auto;
+  margin-bottom: 4%;
+  
 }
 
-.footer-bottom p {
-  margin: 0;
+/*------------------------------------------------------------------
+    FORMULARIO
+-------------------------------------------------------------------*/
+#formulario-reserva {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.reservaciones-main label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.reservaciones-main input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.reservaciones-main h2{
+  color: #000;
+  font-size: 24px;
+}
+
+/* Cambia el color del borde cuando se enfoca en el campo */
+.reservaciones-main input:required:focus {
+  border-color: #ff4500; /* Cambia a color naranja cuando se enfoca en un campo obligatorio */
+}
+
+.reservaciones-main button {
+  background-color: #ff4500;
+  color: #fff;
+  padding: 12px 20px;
   font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
+.reservaciones-main button:hover {
+  background-color: #e53935;
+ 
+}
 
 
 /*BOTTON DE WHASAPP FIXED .*/
@@ -363,4 +418,56 @@ footer {
   100%{
       box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
   }
+}
+
+
+
+
+
+/*------------------------------------------------------------------
+    FOOTER
+-------------------------------------------------------------------*/
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 25px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1600px;
+ 
+  margin: 0 auto;
+}
+
+.footer-info, .footer-social {
+  flex: 1;
+}
+
+.footer-info p {
+  margin: 10px 0;
+}
+
+.footer-social img {
+  width: 30px; /* Ajusta el tamaño según tus preferencias */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  margin-right: 10px; /* Espaciado entre las imágenes */  
+  margin-top: 2px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  background-color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Alinea el contenido en la parte inferior */
+  min-height: 50px; /* Ajusta según tus necesidades, pero debe ser un valor positivo */
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 16px;
 }

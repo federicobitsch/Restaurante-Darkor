@@ -16,3 +16,6 @@
 *Crear una seccion de Reservaciones. (primero diseñarlo despues hacerlo.)
 8/02
 
+
+*el boton de reservas donde dice ENVIAR 
+*Creacion de base de dato para ver las reservas de los usuarios. con MYSQL o sqlite
