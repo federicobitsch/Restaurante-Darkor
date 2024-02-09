@@ -20,7 +20,7 @@ Bienvenido al repositorio del sitio web del Restaurante Darkor. Este proyecto es
 - FIGMA
 
 ## Instrucciones de Uso
-1. Clona el repositorio: `git clone https://github.com/tu_usuario/restaurante-darkor.git`
+1. Clona el repositorio: `git clone https://github.com/federicobitsch/restaurante-darkor.git`
 2. Abre el archivo `index.html` en tu navegador favorito.
 
 
